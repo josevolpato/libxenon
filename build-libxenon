@@ -1,0 +1,7 @@
+echo "Construindo libxenon..."
+make -C libxenon/ports/xenon clean || exit 0
+make -C libxenon/ports/xenon libxenon.a || exit 0
+make -C libxenon/ports/xenon install || exit 0
+echo 
+echo "libxenon instalada!"
+echo
